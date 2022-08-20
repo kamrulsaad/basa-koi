@@ -18,12 +18,16 @@ const Register = () => {
         createUser(email, e.target.password.value)
     }
 
+    if (emailError) {
+        toast.error(emailError?.message)
+    } 
+
     useEffect(() => {
         if (user || emailuser) navigate('/')
     }, [user, navigate, emailuser])
 
-    if (error || emailError) {
-        toast.error(error?.message || emailError?.message)
+    if (error) {
+        toast.error(error?.message)
     }   
 
     return (
@@ -59,7 +63,7 @@ const Register = () => {
                             </Link>
                         </div>
                         <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
-                            <div className="bg-slate-200 rounded shadow-2xl p-7 sm:p-10">
+                            <div className="bg-white rounded shadow-2xl p-7 sm:p-10">
                                 <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
                                     Register
                                 </h3>

@@ -84,7 +84,7 @@ export const Team = () => {
             </div>
             <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
                 {
-                    members.map(({ name, image, role }, index) => <div>
+                    members.map(({ name, image, role }, index) => <div key={index}>
                         <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                             <img
                                 className="object-cover w-full h-56 md:h-64 xl:h-80"

@@ -40,7 +40,7 @@ const Service = ({s}) => {
                 <Phone></Phone>
                 <Link to={`/courses/${_id}`}
                     aria-label=""
-                    className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-400 hover:text-purple-800"
+                    className="inline-flex ml-2 md:ml-0 items-center font-semibold transition-colors duration-200 text-purple-400 hover:text-purple-800"
                 >
                     Learn more
                 </Link>

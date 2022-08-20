@@ -25,8 +25,12 @@ const Login = () => {
         if (user || emailuser) navigate(from, { replace: true })
     }, [user, from, navigate, emailuser])
 
-    if (error || emailError) {
-        toast.error(error?.message || emailError?.message)
+    if (error) {
+        toast.error(error?.message)
+    }
+
+    if (emailError) {
+        toast.error(emailError?.message)
     }
 
     return (

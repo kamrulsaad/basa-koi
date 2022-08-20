@@ -11,7 +11,7 @@ const ServiceDetails = () => {
     const { image, price, rooms, furnished, category, male, sqft } = course
 
     useEffect(() => {
-        fetch(`http://localhost:5000/flats/${id}`)
+        fetch(`https://pathshala-server.herokuapp.com/flats/${id}`)
             .then(res => res.json())
             .then(result => setCourse(result))
     }, [id])

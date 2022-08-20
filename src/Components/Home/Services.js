@@ -31,7 +31,7 @@ const Services = ({ home }) => {
     ];
 
     useEffect(() => {
-        fetch(`http://localhost:5000/flats${filter ? `?category=${filter}` : ''}`)
+        fetch(`https://pathshala-server.herokuapp.com/flats${filter ? `?category=${filter}` : ''}`)
             .then(res => res.json())
             .then(result => setServices(result))
     }, [filter])
