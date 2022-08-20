@@ -17,7 +17,7 @@ const Navbar = () => {
             <Link to='/services'>Services</Link>
         </li>
         <li>
-            <Link to='/'>About</Link>
+            <Link to='/'>Contacts</Link>
         </li>
     </>
 
@@ -48,7 +48,9 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case text-xl">Pathshala</Link>
+                <Link to='/' className="btn btn-ghost hover:bg-white uppercase text-xl">
+                    <div><img className='w-20' src='assets/logo.png' alt=''></img></div>
+                    Basa koi</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
@@ -61,7 +63,10 @@ const Navbar = () => {
                         user ? <>
                             <button className='btn btn-ghost btn-xs mr-2'>{user?.displayName?.slice(0, 11)}</button>
                             <button onClick={() => signOut(auth)} className='btn btn-primary'>Logout</button></> :
-                            <Link to='/login' className="btn">Login</Link>
+                            <>
+                            <Link to='/login' className="btn btn-success mr-2 btn-outline">Login</Link>
+                            <Link to='/register' className="btn btn-primary btn-outline">Sign up</Link>
+                            </>
                     }
                 </div>
             }
