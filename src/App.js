@@ -21,6 +21,11 @@ function App() {
         <Route path="/courses/:id" element={<RequireAuth><ServiceDetails></ServiceDetails></RequireAuth>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
       </Routes>
+      <div className='sticky bottom-4 ml-auto'>
+        <a target={'_blank'} rel='noreferrer' href="https://wa.me/8801628439125">
+          <img className='w-16 sticky bottom-4 left-8 animate-pulse hover:animate-none hover:scale-110 transition-all duration-150' src="assets/whatsapp.png" alt="whatsapp" />
+        </a>
+      </div>
       <Footer></Footer>
       <ToastContainer position="top-center" transition={Slide}></ToastContainer>
     </div>
