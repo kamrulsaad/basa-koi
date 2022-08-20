@@ -29,7 +29,7 @@ const Register = () => {
     return (
         <div className="relative">
             <img
-                src="assets/2.jpg"
+                src="assets/Dhaka/img-6.jpg"
                 className="absolute inset-0 object-cover w-full h-full"
                 alt=""
             />

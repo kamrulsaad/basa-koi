@@ -32,7 +32,7 @@ const Login = () => {
     return (
         <div className="relative">
             <img
-                src="https://images.pexels.com/photos/3747463/pexels-photo-3747463.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                src="assets/Dhaka/img-1.jpg"
                 className="absolute inset-0 object-cover w-full h-full"
                 alt=""
             />
@@ -46,7 +46,7 @@ const Login = () => {
                                 <span className="text-teal-400">offers</span>
                             </h2>
                             <p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
-                                Lets wait no more. Dive upon your journey of learning.
+                                Lets wait no more. Dive upon your journey of a new life.
                             </p>
                             <Link to='/register'
                                 className="inline-flex items-center cursor-pointer font-semibold tracking-wider transition-colors duration-200 text-teal-400 hover:text-teal-700"

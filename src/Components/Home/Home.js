@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
-            <Services></Services>
+            <Services home></Services>
             <Statistic></Statistic>
             <Team></Team>
         </div>
