@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Phone from '../Shared/Phone';
 
 const Service = ({s}) => {
 
@@ -36,7 +37,7 @@ const Service = ({s}) => {
                 <p className="mb-2 text-gray-700">
                     Type: {male? "Male": "Female"}
                 </p>
-                <button className="btn btn-xs btn-primary mr-2">Contact Seller</button>
+                <Phone></Phone>
                 <Link to={`/courses/${_id}`}
                     aria-label=""
                     className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-400 hover:text-purple-800"

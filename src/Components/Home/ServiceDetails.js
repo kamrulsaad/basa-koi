@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Phone from '../Shared/Phone';
 
 const ServiceDetails = () => {
 
@@ -31,6 +32,9 @@ const ServiceDetails = () => {
                         <p className="text-base text-gray-800 font-bold md:text-lg">
                             No. of Rooms: {rooms}
                         </p>
+                        <p className="text-base text-gray-800 font-bold md:text-lg">
+                            Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam similique deleniti molestias odit, rem quidem unde assumenda ex architecto, dolor saepe expedita repudiandae fuga, nesciunt laudantium incidunt adipisci? Ex, assumenda!
+                        </p>
                         <p className="text-base text-gray-700 font-bold md:text-lg">
                             Furnished: {furnished ? "Yes" : "No"}
                         </p>
@@ -44,13 +48,7 @@ const ServiceDetails = () => {
                             Price : {price}
                         </p>
                     </div>
-                    <div className="flex flex-col items-center md:flex-row">
-                        <p
-                            className="inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
-                        >
-                            Contact Seller
-                        </p>
-                    </div>
+                    <Phone></Phone>
                 </div>
             </div>
             <div className="inset-y-0 right-0 w-full max-w-xl px-4 mx-auto lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">

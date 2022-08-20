@@ -1,3 +1,4 @@
+import { Avatar } from '@material-tailwind/react';
 import { signOut } from 'firebase/auth';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -22,7 +23,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar z-20 sticky top-0 bg-base-100 border-b-2 shadow-lg md:px-36">
+        <div className="navbar z-50 sticky top-0 bg-base-100 border-b-2 shadow-lg md:px-36">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -61,8 +62,8 @@ const Navbar = () => {
                 loading ? <div className="navbar-end"><SmallLoading></SmallLoading> </div> : <div className="navbar-end">
                     {
                         user ? <>
-                            <button className='btn btn-ghost btn-xs mr-2'>{user?.displayName?.slice(0, 11)}</button>
-                            <button onClick={() => signOut(auth)} className='btn btn-primary'>Logout</button></> :
+                            {user?.photoURL &&  <Avatar src={user?.photoURL} alt="avatar" variant="circular" />}
+                            <button onClick={() => signOut(auth)} className='ml-2 btn btn-primary'>Logout</button></> :
                             <>
                             <Link to='/login' className="btn btn-success mr-2 btn-outline">Login</Link>
                             <Link to='/register' className="btn btn-primary btn-outline">Sign up</Link>
