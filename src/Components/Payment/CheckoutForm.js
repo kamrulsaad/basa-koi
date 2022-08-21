@@ -21,7 +21,7 @@ const CheckoutForm = ({ product }) => {
 
     useEffect(() => {
         if (price) {
-            fetch("http://localhost:5000/create-payment-intent", {
+            fetch("https://pathshala-server.herokuapp.com/create-payment-intent", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

@@ -1,4 +1,5 @@
 import React from 'react';
+import Testimonials from '../Review/Testimonials';
 import AccordionDef from './Accordion';
 import Header from './Header';
 import Services from './Services';
@@ -11,6 +12,7 @@ const Home = () => {
             <Header></Header>
             <Services home></Services>
             <AccordionDef></AccordionDef>
+            <Testimonials home></Testimonials>
             <Statistic></Statistic>
             <Team></Team>
         </div>

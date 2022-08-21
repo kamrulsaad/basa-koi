@@ -10,6 +10,13 @@ import ServiceDetails from "./Components/Home/ServiceDetails";
 import RequireAuth from "./Components/Shared/RequireAuth";
 import Services from "./Components/Home/Services";
 import Payment from "./Components/Payment/Payment";
+import Reviews from "./Components/Review/Reviews";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+
+Aos.init({ 
+  easing: 'ease-in-out',
+});
 
 function App() {
   return (
@@ -21,6 +28,8 @@ function App() {
         <Route path="/services" element={<Services ></Services>}></Route>
         <Route path="/courses/:id" element={<RequireAuth><ServiceDetails></ServiceDetails></RequireAuth>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="/reviews" element={<Reviews></Reviews>}></Route>
+        <Route path="/payment/:id" element={<Payment></Payment>}></Route>
         <Route path="/payment/:id" element={<Payment></Payment>}></Route>
       </Routes>
       <div className='sticky bottom-4 ml-auto'>
