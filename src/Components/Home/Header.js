@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div
             className="hero min-h-[calc(100vh-68px)]"
-            style={{ backgroundImage: "url(assets/Dhaka/img-3.jpg)" }}
+            style={{ backgroundImage: "url(assets/Dhaka/img-4.jpg)" }}
         >
             <div className="hero-overlay bg-opacity-60" />
             <div className="hero-content text-center text-neutral-content">

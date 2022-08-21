@@ -7,7 +7,7 @@ const Service = ({s}) => {
     const {_id, image, price, rooms, furnished, category, male, sqft} = s
 
     return (
-        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+        <div data-aos="fade-up" className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
             <img
                 src={image}
                 className="object-cover w-full h-48"
