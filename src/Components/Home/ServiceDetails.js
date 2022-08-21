@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Phone from '../Shared/Phone';
 
 const ServiceDetails = () => {
@@ -15,6 +15,9 @@ const ServiceDetails = () => {
             .then(res => res.json())
             .then(result => setCourse(result))
     }, [id])
+
+
+    console.log(course);
 
     return (
         <div className="relative flex flex-col py-16 lg:pt-0 lg:flex-col lg:pb-0">
@@ -45,10 +48,11 @@ const ServiceDetails = () => {
                             Type: {male ? "Male" : "Female"}
                         </p>
                         <p className="text-base text-gray-700 md:text-lg">
-                            Price : {price}
+                            Price : {price}৳ 
                         </p>
                     </div>
                     <Phone></Phone>
+                    <Link to={`/payment/${id}`}><button className='btn btn-success btn-outline btn-sm ml-2'>Book Now</button></Link>
                 </div>
             </div>
             <div className="inset-y-0 right-0 w-full max-w-xl px-4 mx-auto lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">

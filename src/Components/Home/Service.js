@@ -15,7 +15,7 @@ const Service = ({s}) => {
             />
             <div className="p-5 border border-t-0">
                 <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-                    <span className="text-gray-600">Price—{price}</span>
+                    <span className="text-gray-600">Price—{price}৳ </span>
                 </p>
                 <a
                     href="/"

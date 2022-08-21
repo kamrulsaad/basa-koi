@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import ServiceDetails from "./Components/Home/ServiceDetails";
 import RequireAuth from "./Components/Shared/RequireAuth";
 import Services from "./Components/Home/Services";
+import Payment from "./Components/Payment/Payment";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/services" element={<Services ></Services>}></Route>
         <Route path="/courses/:id" element={<RequireAuth><ServiceDetails></ServiceDetails></RequireAuth>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="/payment/:id" element={<Payment></Payment>}></Route>
       </Routes>
       <div className='sticky bottom-4 ml-auto'>
         <a target={'_blank'} rel='noreferrer' href="https://wa.me/8801628439125">
