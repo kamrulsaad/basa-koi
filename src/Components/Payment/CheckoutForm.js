@@ -126,7 +126,7 @@ const CheckoutForm = ({ product }) => {
                         {success}
                     </p>
                     <p>Your Transaction Id: <span className='font-bold'>{transactionId}</span> </p>
-                    <Link className='btn btn-success btn-sm btn-outline mt-2' to='/addReview'>Add a Reviwe of your experience</Link>
+                    <Link className='btn btn-success btn-sm btn-outline mt-2' to='/reviews'>Add a Reviwe of your experience</Link>
                 </div>
             }
         </form>
