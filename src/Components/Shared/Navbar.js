@@ -62,7 +62,7 @@ const Navbar = () => {
                 loading ? <div className="navbar-end"><SmallLoading></SmallLoading> </div> : <div className="navbar-end">
                     {
                         user ? <>
-                            <Avatar className='hidden md:flex' src={user?.photoURL || "assets/profile.jpg"} alt="avatar" variant="circular" />
+                            <Avatar className='hidden md:flex' src={user.photoURL || "assets/profile.jpg"} alt="avatar" variant="circular" />
                             <button onClick={() => signOut(auth)} className='ml-2 btn btn-primary'>Logout</button></> :
                             <>
                                 <Link to='/login' className="btn btn-success mr-2 btn-outline">Login</Link>

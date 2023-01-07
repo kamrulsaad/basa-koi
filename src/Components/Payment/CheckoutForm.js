@@ -21,7 +21,7 @@ const CheckoutForm = ({ product }) => {
 
     useEffect(() => {
         if (price) {
-            fetch("https://basa-koi-server.vercel.app/create-payment-intent", {
+            fetch("https://basa-koi-server.onrender.com/create-payment-intent", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

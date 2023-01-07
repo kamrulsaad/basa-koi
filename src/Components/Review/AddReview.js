@@ -29,7 +29,7 @@ const AddReview = ({forceUpdate}) => {
             minutes: date.getMinutes()
         }
 
-        axios.post('https://basa-koi-server.vercel.app/reviews', review)
+        axios.post('https://basa-koi-server.onrender.com/reviews', review)
             .then(data => {
                 if (data.data.acknowledged) {
                     toast.success('Your review is added')

@@ -7,7 +7,7 @@ const Testimonials = ({home, ignored}) => {
     const [reviews, setReviews] = useState([])
 
     useEffect(() => {
-        fetch('https://basa-koi-server.vercel.app/reviews')
+        fetch('https://basa-koi-server.onrender.com/reviews')
         .then(res => res.json())
         .then(data => {
             if(home) {
