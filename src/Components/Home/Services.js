@@ -31,7 +31,7 @@ const Services = ({ home }) => {
     ];
 
     useEffect(() => {
-        fetch(`https://pathshala-server.herokuapp.com/flats${filter ? `?category=${filter}` : ''}`)
+        fetch(`https://basa-koi-server.vercel.app/flats${filter ? `?category=${filter}` : ''}`)
             .then(res => res.json())
             .then(result => setServices(result))
     }, [filter])

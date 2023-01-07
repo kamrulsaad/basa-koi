@@ -20,7 +20,7 @@ const Payment = () => {
     const { price, sqft, category } = product
 
     useEffect(() => {
-        fetch(`https://pathshala-server.herokuapp.com/flats/${id}`)
+        fetch(`https://basa-koi-server.vercel.app/flats/${id}`)
             .then(res => res.json())
             .then(result => setProduct(result))
     }, [id])

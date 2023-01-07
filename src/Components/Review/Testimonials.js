@@ -7,7 +7,7 @@ const Testimonials = ({home, ignored}) => {
     const [reviews, setReviews] = useState([])
 
     useEffect(() => {
-        fetch('https://pathshala-server.herokuapp.com/reviews')
+        fetch('https://basa-koi-server.vercel.app/reviews')
         .then(res => res.json())
         .then(data => {
             if(home) {
